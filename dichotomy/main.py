@@ -6,13 +6,13 @@ b = 16
 def f(x):
     return (pow(x,3)) - 13
 
-print("èÆ·Á®‚†‚Ï ™-¢Æ Ë†£Æ¢, ™Æ£§† ≠† Æ‚‡•ß™• °„§•‚ E")
+print("œÓÒ˜ËÚ‡Ú¸ Í-‚Ó ¯‡„Ó‚, ÍÓ„‰‡ Ì‡ ÓÚÂÁÍÂ ·Û‰ÂÚ E")
 print("E=", e)
 #x^5=1613
 fout = open('output.txt', 'w')
-print("a= ", a,"  b= ", b, "  (b-a)= ", (b-a), "  à‚Æ£Æ=", (a+b)/2, file=fout )
+print("a= ", a,"  b= ", b, "  (b-a)= ", (b-a), "  »ÚÓ„Ó=", (a+b)/2, file=fout )
 print("f(a)=", f(a), "  f(middle)=", f((a+b)/2), "\n", file=fout)
-print("a= ", a,"  b= ", b, "  (b-a)= ", (b-a), "  à‚Æ£Æ=", (a+b)/2)
+print("a= ", a,"  b= ", b, "  (b-a)= ", (b-a), "  »ÚÓ„Ó=", (a+b)/2)
 print("f(a)=", f(a), "  f(middle)=", f((a+b)/2))
 while b - a > e:
     c = (a + b) / 2
@@ -20,8 +20,8 @@ while b - a > e:
         b = c
     else:
         a = c
-    print("a= ", a,"  b= ", b, "  (b-a)= ", (b-a), "  à‚Æ£Æ=", (a+b)/2, file=fout )
+    print("a= ", a,"  b= ", b, "  (b-a)= ", (b-a), "  »ÚÓ„Ó=", (a+b)/2, file=fout )
     print("f(a)=", f(a), "  f(middle)=", f((a+b)/2),"\n", file=fout)
-    print("a= ", a,"  b= ", b, "  (b-a)= ", (b-a), "  à‚Æ£Æ=", (a+b)/2)
+    print("a= ", a,"  b= ", b, "  (b-a)= ", (b-a), "  »ÚÓ„Ó=", (a+b)/2)
     print("f(a)=", f(a), "  f(middle)=", f((a+b)/2),"\n")
 fout.close()
