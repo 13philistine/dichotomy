@@ -1,4 +1,4 @@
-﻿# coding: cp866
+# coding: cp866
 e = float(1e-5)
 a = 0
 b = 16
