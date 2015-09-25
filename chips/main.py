@@ -25,17 +25,17 @@ def out():
 
 def sel():
     v = 0
-    while (1 > v) or (v > 6):  # выбираем фишку
-        print("Выберите фишку: ")
+    while (1 > v) or (v > 6):  #
+        print("Choose chips: ")
         v = int(input())
     v -= 1
     i = v
-    # убираем её с вида
+
     while y[i] == "X":
-        print("Фишка использована")
+        print("Chips used")
         v = -1
         while (0 > v) or (v > 5):
-            print("Выберите фишку: ")
+            print("Choose chips: ")
             v = int(input())
             v -= 1
             i = v
@@ -48,10 +48,10 @@ def sel():
 
 def ai_sel():
     v = 0
-    while (1 > v) or (v > 6):  # выбираем фишку
+    while (1 > v) or (v > 6):  # choose
         v = int(random.randint(1,6))
     i = v - 1
-    # убираем её с вида
+    # add X
     while a[i] == "X":
         v = 0
         while (1 > v) or (v > 6):
@@ -76,7 +76,7 @@ def ito():
         s_you += s_buf
         f -= 1
     else:
-        print("Фишки равны")
+        print("Chips draw")
         a[b_a-1] = b_a
         y[b_y-1] = b_y
 
@@ -99,7 +99,7 @@ def game():
 
     out()
     win()
-    print("===  КОНЕЦ ИГРЫ   ===")
+    print("===  GAME OVER   ===")
 
 
 game()
